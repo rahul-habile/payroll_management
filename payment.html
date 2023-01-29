@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./payment.css">
+  <script src="./payment.js" defer></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <main>
+      <table class="table table-info table-striped table-hover table-bordered caption-top mt-5">
+        <caption>Unpaid Employees</caption>
+        <thead>
+          <tr>
+            <th>Emp. ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="employees-list"></tbody>
+      </table>
+    </main>
+    <aside>
+      <table class="table table-striped table-hover table-bordered table-success caption-top mt-5">
+        <caption>Total Amount</caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody id="salaries-list"></tbody>
+      </table>
+      <div class="balances">
+        <div><b>Total Amount: </b><span id="total-amount">₹00.00</span></div>
+        <div><b>Total Company Balance:</b> <span id="total-balance">₹00.00</span></div>
+      </div>
+      <div class="controls">
+        <button class="btn payment-btn">Make Payment</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

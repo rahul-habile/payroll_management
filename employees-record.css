@@ -1,0 +1,56 @@
+body {
+  margin: 10px;
+  background-color: azure;
+}
+
+caption {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkslategrey;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+table {
+  padding-top: 0px;
+}
+
+nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .btn:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.employee-table {
+  background-color: aquamarine;
+}
+
+.btn {
+  background: #ac60a0;
+  color: white;
+  padding: 2px 8px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  background: #c3739f;
+  color: rgb(189, 37, 37);
+}
