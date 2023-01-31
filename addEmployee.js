@@ -14,7 +14,7 @@ const cancelBtn = document.querySelector(".cancel-btn");
 const formSelector = document.querySelector("#add-employee-form");
 
 const isEmpty = (value) => value.trim() === "";
-const isSixChars = (value) => value.trim().length >= 1;
+const isTwoChars = (value) => value.trim().length >= 2;
 const isPhone = (value) => value.trim().length === 10;
 
 addEmpForm.addEventListener("submit", (e) => {
@@ -93,4 +93,3 @@ cancelBtn.addEventListener("click", () => {
 function toEmployeeRecord() {
   location.replace("./employees-record.html");
 }
-

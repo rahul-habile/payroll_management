@@ -25,12 +25,12 @@ function validate() {
 
   if (password !== "admin#123") {
     errorTextSelector.textContent = "Entered Password is incorrect!";
-    errorTextSelector.style.color = 'red';
+    errorTextSelector.style.color = "red";
   }
 
   if (!validIdentity) {
     errorTextSelector.textContent = "User not found...";
-    errorTextSelector.style.color = 'red';
+    errorTextSelector.style.color = "red";
   }
 
   if (validIdentity && password == validUser.password) {
@@ -42,14 +42,11 @@ function validate() {
     alert("You have left " + attempt + " attempt;");
     // Disabling fields afvenderter 3 attempts.
     if (attempt == 0) {
-      document.getElementById("entered-email").disabled = true;
+      document.getElementById("entered-value").disabled = true;
       document.getElementById("entered-password").disabled = true;
       document.getElementById("submit").disabled = true;
       return;
     }
   }
 }
-
-
-// for add employee
 
