@@ -93,3 +93,7 @@ cancelBtn.addEventListener("click", () => {
 function toEmployeeRecord() {
   location.replace("./employees-record.html");
 }
+function toPaymentsPage() {
+  location.replace("./payment.html");
+}
+
