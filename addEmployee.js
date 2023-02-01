@@ -22,7 +22,7 @@ addEmpForm.addEventListener("submit", (e) => {
 
   const enteredNameIsValid = !isEmpty(enteredName.value);
   const enteredEmpIDIsValid =
-    enteredEmpID.value && isSixChars(enteredEmpID.value);
+    enteredEmpID.value && isTwoChars(enteredEmpID.value);
   const enteredEmailIsValid = enteredEmail.value.includes("@");
   const enterePhoneIsValid = isPhone(enteredPhone.value);
 
